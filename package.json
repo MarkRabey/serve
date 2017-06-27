@@ -4,7 +4,7 @@
   "description": "Static file serving and directory listing",
   "scripts": {
     "precommit": "lint-staged",
-    "test": "xo"
+    "test": "xo && ava --verbose"
   },
   "files": [
     "bin",
@@ -43,9 +43,11 @@
   },
   "homepage": "https://github.com/zeit/serve#readme",
   "devDependencies": {
+    "ava": "0.19.1",
     "eslint-config-prettier": "2.2.0",
     "husky": "0.14.1",
     "lint-staged": "4.0.0",
+    "mock-require": "2.0.2",
     "prettier": "1.5.1",
     "xo": "0.18.2"
   },
